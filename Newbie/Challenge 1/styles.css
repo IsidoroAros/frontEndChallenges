@@ -1,0 +1,154 @@
+*{
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color: #EDF2F8;
+}
+
+h5{
+    margin-block-start: 0px;
+    margin-block-end: 5px;
+}
+
+p{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+
+/*------------------ CARD ------------------*/
+
+
+#card{
+    position: fixed;
+    border-radius: 10px;
+    background: rgb(252, 252, 252);
+    width: 700px;
+    height: 280px;
+    top: 20%;
+    right: 10%;
+    box-shadow: 5px 5px 40px rgba(0,0,0,0.3);
+    box-shadow: -5px -5px 30px rgba(255, 255, 255);
+}
+
+/*------------------ INFO ------------------*/
+
+.information{
+    display: inline;
+    width: 50%;
+} 
+
+#Michelle-img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.column{
+    margin-top: 7px;
+    float: left;
+}
+
+.image-container{
+    display: block;
+    float: left;
+}
+
+.parte-derecha{
+    width: 100%;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+
+/* Textos */
+
+#content{
+    margin-top: 20px;
+}
+.text{
+    margin-bottom: 10px;
+}
+
+#textos{
+    float: left;
+    width: 50%;
+}
+
+p .text2{
+    margin-top:-5px;
+    font-size: 10px;
+}
+.parte-derecha h3{
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 18px;  
+    font-weight: bold;
+    color: #464F5E;  
+    line-height: 25px;
+    word-spacing: 2px;
+}
+.parte-derecha p{
+    text-align: justify;
+    font-size: 12px;    
+    line-height: 20px;
+    margin-top: 12px;
+    width: 90%;
+    color: #B1B5B9;
+}
+
+#inner-text{
+    margin-left: 10px;
+    margin-top:0px;
+}
+#inner-text h5{
+    color: #666D7A;
+    font-weight: bolder;
+}
+#inner-text p{
+    color: #B1B5B9;
+    margin-top: -4px;
+    font-weight: bold;
+}
+
+.fecha{
+    margin-top: -5px;
+}
+
+/* Share icon */
+
+#share{
+    margin-right: -170px;
+    float: right;
+}
+
+#icono{
+    margin-top: 22px;
+    height: 15px;
+    width: 15px;
+    background-color: #ECEEF3;
+    padding: 12px;
+    border-radius: 50%;
+}
+/*------------------ PORTADA ------------------*/
+
+#foto-mesa{
+    float: left;
+    margin: 0px;
+    padding-right: 40px;
+    height: 100%;
+    width: 40%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.portrait{
+    display: inline;
+}
+
+/*------------------ ATTRIBUTION ------------------*/
+
+.attribution{
+    top: 90%;
+}
