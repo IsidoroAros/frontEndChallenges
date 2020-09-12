@@ -12,15 +12,15 @@
 }
 
 body{
-    width: 1440px;
+    margin: 0px auto;
 }
 /*Titles*/
 
 #banner{
     display: block;
+    margin: 0px auto;
     width: 1000px;
     top: 10%;
-    margin-left: 50%;
     text-align: center;
 }
 #first-title{
@@ -45,28 +45,36 @@ body{
 
 .wrap-grid{
     display: grid;
-    width: 80%;
-    margin: 50px auto;
-    grid-template-columns: repeat(3, 1fr); /*3 columnas de una fracción de espacio cada una*/
+    width: 100%;
+    grid-template-columns: repeat(3, 400px); /*3 columnas de una fracción de espacio cada una*/
     grid-template-rows: repeat(2, 1fr); /*3 filas de una fracción de espacio cada una*/
-    grid-template-areas: 
-    ". card-2 ." 
-    "card-1 card-3 card-4";
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .wrap-grid #card-1{
     position: relative;
-    grid-row: 1/1;
+    grid-row: 1/3;
     grid-column: 1/1;
 }
 .wrap-grid #card-2{
     position: relative;
-    grid-row: ;
-    grid-column: ;
+    grid-row: 1/1;
+    grid-column: 2/2;
 }
+.wrap-grid #card-3{
+    position: relative;
+    grid-row: 2/2;
+    grid-column: 2/2;
+}
+.wrap-grid #card-4{
+    position: relative;
+    grid-row: 1/3;
+    grid-column: 3/3;
+} 
+
 
 
 /*Estilos card general*/
@@ -78,9 +86,10 @@ body{
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 10px 25px rgb(197, 197, 197);
+    box-shadow: 0px 10px 25px rgb(219, 219, 219);
     cursor: pointer;
     transition: all 300ms;
+    color: hsl(0, 0%, 76%);
 }
 
 .card:hover{
