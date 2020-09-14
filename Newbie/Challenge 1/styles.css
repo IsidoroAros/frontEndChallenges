@@ -116,17 +116,18 @@ body{
 
 #share{
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     background-color: antiquewhite;
     border-radius: 50%;
     margin-left: 80%;
     margin-top: -45px;
     float: left;
+    cursor: pointer;
 }
 
 #share img{
-    padding: 10px;
+    padding: 13px;
     height: 20px;
     width: 20px;
     margin: 0px auto;
@@ -137,6 +138,56 @@ body{
 }
 
 
+
+.share-box{
+    display: none;
+    position: absolute;
+    width:270px;
+    height: 60px;
+    background-color:  hsl(214, 49%, 33%);
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.share-box h5{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+    margin-left: 30px;
+    margin-top: 21px;
+}
+.share-box.active {
+    display: block;
+    margin-top: -136px;
+    margin-left: 250px;
+}/*Add active class when JS listens click on share icon*/
+
+.share .change{
+    background-color: rgb(219, 108, 108);
+}
+
+.icons{
+    display: block;
+    float: right;
+    margin-right: 18px;
+    margin-top: -21px;
+}
+.icons img{
+    height: 25px;
+    width:25px;
+    padding-right: 12px;
+}
+
+.arrow-down {
+    margin-top: 10px;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid hsl(214, 49%, 33%);
+}
 /*Footer*/
 
 .attribution{
