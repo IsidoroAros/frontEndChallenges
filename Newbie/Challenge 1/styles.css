@@ -17,8 +17,7 @@ body{
 #card{
     display: grid;
     margin: 0px auto;
-    margin-left: 700px;
-    margin-top: 140px;
+    margin-top: 200px;
     width: 800px;
     height: 330px;
     background-color: rgb(255, 255, 255);
@@ -164,7 +163,7 @@ body{
 }/*Add active class when JS listens click on share icon*/
 
 .share .change{
-    background-color: rgb(219, 108, 108);
+    background: rgb(219, 108, 108);
 }
 
 .icons{

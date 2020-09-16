@@ -17,7 +17,6 @@ class product {
         this.price = price;// atributes recieved via constructor parameters
         this.year = year;
     }
-
 }
 
 class UI {
