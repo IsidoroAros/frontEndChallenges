@@ -1,0 +1,107 @@
+/*General styles*/
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: hsl(229, 57%, 11%);
+    margin-top: 100px;
+}
+
+.background{
+    position: fixed;
+    z-index: -1;
+    margin: 0px auto;
+    margin-top: 60px;
+    height: 400px;
+    width: 100%;
+    background-image: url(images/bg-desktop.png);
+    background-repeat: no-repeat;
+}
+
+.wrap-cards{
+    margin-top: 200px;
+}
+
+/*Card 1 Style*/
+
+.card-icons{
+    float: left;
+    width: 300px;
+    height: 170px;
+    margin-left: 200px;
+    background-color: hsl(228, 56%, 26%);
+    box-shadow: 0px 10px 30px rgb(26, 26, 26);
+    border-radius: 10px;
+    border-top-right-radius: 80px;
+}
+
+.card-icons #fylo-icon{
+    display: block;
+    padding-top: 30px;
+    margin-left: 40px;
+}
+.card-icons #fylo-icon img{
+    height: 30px;
+    width: 100px;
+}
+
+
+.native-icons{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.native-icons .icon{
+    margin-top: 30px;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 6px;
+}
+
+.icon img{
+    padding-top: 3px;
+}
+
+/*Card 2 Style*/
+
+.storage-card{
+    float: left;
+    width: 400px;
+    height: 120px;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+.storage-card h5{
+    width: 100%;
+    color: white;
+    text-align: left;
+    font-weight: 200;
+    margin-left: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#storage-bar{
+    width: 90%;
+    height: 17px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 100px;
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+#used-storage-bar{
+    height: 60%;
+    width: 75%;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
