@@ -30,6 +30,7 @@ body{
 /*Card 1 Style*/
 
 .card-icons{
+    position: relative;
     float: left;
     width: 300px;
     height: 170px;
@@ -71,6 +72,7 @@ body{
 /*Card 2 Style*/
 
 .storage-card{
+    position: relative;
     float: left;
     width: 400px;
     height: 120px;
@@ -78,7 +80,7 @@ body{
     border-radius: 10px;
     margin-left: 30px;
     margin-top: 50px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 .storage-card h5{
     width: 100%;
@@ -92,16 +94,26 @@ body{
 
 #storage-bar{
     width: 90%;
-    height: 17px;
+    height: 12px;
     background-color: hsl(229, 57%, 11%);
     border-radius: 100px;
-    margin-left: 20px;
-    margin-top: -5px;
+    margin-left: 18px;
+    overflow: hidden;
+    padding: 3px;
 }
 
 #used-storage-bar{
-    height: 60%;
-    width: 75%;
+    display: block;
+    height: 100%;
+    width: 81.5%;
     border-radius: 50px;
     background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+
+#indicator{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    color: white;
+    z-index: 1;
 }
