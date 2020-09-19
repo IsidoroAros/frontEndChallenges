@@ -17,8 +17,6 @@ body{
 
 .all {
     width: 100%;
-    margin-top: 239px;
-    margin-left: 603px;
 }
 
 .background{
@@ -34,6 +32,7 @@ body{
 
 .wrap-cards{
     margin-top: 200px;
+    position: fixed;
 }
 
 /*Card 1 Style*/
@@ -58,7 +57,7 @@ body{
 }
 .card-icons #fylo-icon img{
     height: 40px;
-    width: 120px;
+    width: 130px;
 }
 
 
