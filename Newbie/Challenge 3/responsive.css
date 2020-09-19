@@ -1,9 +1,14 @@
-@media (max-width: 400px){
+@media (max-width: 375px){
     body{
         background-image: url(images/bg-mobile.png);
         width: 375px;
         height: 100%;
         background-repeat: no-repeat;
+        overflow-x: hidden; 
+    }
+    #wrap-cards{
+        margin-left: 15px;
+
     }
     .card-icons{
         display: block;
@@ -12,6 +17,7 @@
         margin-left: 30px;
         margin-bottom: 20px;
         margin-top: 115px;
+        width: 80%;
     }
     .storage-card{
         display: block;

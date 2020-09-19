@@ -2,7 +2,10 @@
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
-
+@font-face{
+    font-family: 'Raleway';
+    src: url(Fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
 *{
     font-family: 'Raleway', sans-serif;
 }
@@ -12,6 +15,9 @@ body{
     height: 300px;
     width: 1000px;
     right: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
 
 }
 
@@ -146,15 +152,6 @@ body{
     margin-left: 275px;
 }
 
-.storage-left{
-    position: relative;
-    background-color: #ccc;
-    height: 55px;
-    width: 100px;
-    z-index: 1;
-    float: right;
-    border-radius: 5px;
-}
 #storage-left {
     height: 60px;
     width: 175px;
@@ -180,8 +177,11 @@ body{
   #storage-left p{
       font-size: 14px;
       text-align: center;
+      font-weight: 700;
+      color: hsl(229, 7%, 55%);
   }
   #storage-left strong{
       font-size: 25px;
       text-align: center;
+      color: black;
   }
