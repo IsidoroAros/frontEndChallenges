@@ -1,0 +1,164 @@
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-yellow: hsl(71, 73%, 54%);
+    --Light-gray: hsl(204, 43%, 93%);
+    --Grayish-blue: hsl(218, 22%, 67%);
+
+    --karla:'Karla', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/*@font-face{
+    font-family: "Karla";
+    src: url('fonts/Karla/Karla-Regular.ttf') format(truetype);
+    /*font-family: "Karla-bold";
+    src: url('fonts/Karla/Karla-Bold.ttf') format(truetype);
+}
+*/
+
+*{
+    margin: 0px auto;
+    font-family: var(--karla);
+}
+
+body{
+    background-color: var(--Light-gray);
+}
+
+#card{
+    margin: 0px auto;
+    margin-top: 10%;
+    height: 400px;
+    width: 600px;
+    box-shadow: 0px 0px 50px var(--Grayish-blue);
+    border-radius: 8px;
+}
+
+#join-section{
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 100%;
+    background-color: white;
+    height: 45%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    align-content: center;
+}
+#text-join{
+    width: 76%;
+}
+#join-section h2{
+    letter-spacing: 1px;
+    padding-top: 25px;
+    font-size: 20px;
+    color: var(--Cyan);
+    margin-bottom: 25px;
+    margin-top: 5px;
+}
+
+#join-section h3{
+    font-size: 14px;
+    color: var(--Bright-yellow);
+    margin-bottom: 12px;
+}
+#join-section p{
+    font-size: 12px;
+    color: var(--Grayish-blue);
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
+#subscription-section{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    background-color: var(--Cyan);
+    height: 55%;
+    float: left;
+    border-bottom-left-radius: 8px;
+}
+
+#subscription-section h3{
+    font-size: 14px;
+    color: white;
+    margin-top: 35px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+#subscription-section h4{
+    float: left;
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+    margin-left: 8%;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+#per-month{
+    opacity: 0.5;
+    margin-top: 8px;
+    margin-left: 15px;
+    float: right;
+    font-size: 15px;
+}
+
+#access{
+    padding-bottom: 25px;
+    font-size: 14px;
+    color: white;
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    margin-left: 26px;
+}
+
+#signup-button{
+    display: flex;
+    background-color: var(--Bright-yellow);
+    width: 75%;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.3);
+}
+#signup-button p{
+    align-self: center;
+    color: white;
+    font-size: 14px;
+}
+
+#whyus-section{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    height: 55%;
+    background-color:  hsl(179, 57%, 50%);
+    border-bottom-right-radius: 8px;
+    align-content: flex-start;
+}
+
+#whyus-section h3{
+    flex-direction: row;
+    color: white;
+    margin-left: 35px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+#whyus-section p{
+    font-size: 13px;
+    text-align: left;
+    justify-content: flex-start;
+    width: 55%;
+    margin-left: 35px;
+    line-height: 18px;
+    color: white;
+    opacity: 0.6;
+}
