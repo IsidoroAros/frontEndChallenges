@@ -166,6 +166,7 @@ body{
 @media (max-width: 632px){
     #card{
         margin: 0px auto;
+        margin-top: 1em;
         width: 300px;
     }
     #join-section{
