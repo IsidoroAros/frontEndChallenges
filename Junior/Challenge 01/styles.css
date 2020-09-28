@@ -1,0 +1,44 @@
+:root{
+/*Light Theme*/
+--White: hsl(0, 0%, 100%);
+--topBGPattern: hsl(225, 100%, 98%);
+--cardBG: hsl(227, 47%, 96%);
+--DarkGrayish-BlueText: hsl(228, 12%, 44%);
+--VeryDarkBluetext: hsl(230, 17%, 14%);
+}
+
+html{
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--White);
+}
+
+#header{
+    margin-top: -20px;
+    width: 100%;
+    height: 200px;
+    background-color: var(--topBGPattern);
+}
+
+#dashboard-top h1{
+    padding-top: 15px;
+    text-align: center;
+}
+
+#dashboard-top h4{
+    font-weight: 200px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+#horizontal-line{
+    opacity: 0.5;
+    width: 90%;
+    border: 1px solid black;
+    height: 1px;
+    background-color: black;
+    border-radius: 3px;
+}
