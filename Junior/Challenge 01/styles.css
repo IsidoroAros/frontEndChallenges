@@ -1,3 +1,4 @@
+/*---------------GENERAL-------------*/
 :root{
 /*Light Theme*/
 --White: hsl(0, 0%, 100%);
@@ -5,40 +6,144 @@
 --cardBG: hsl(227, 47%, 96%);
 --DarkGrayish-BlueText: hsl(228, 12%, 44%);
 --VeryDarkBluetext: hsl(230, 17%, 14%);
+
 }
 
 html{
     margin: auto;
     font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: var(--White);
 }
 
-#header{
-    margin-top: -20px;
+/*---------------HEADER-------------*/
+
+#background{
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-color: var(--topBGPattern);
+}
+#header{
+    margin-top: -250px;
+}
+
+#dashboard-top{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px;
+    margin: 1em;
+    margin-bottom: 0;
 }
 
 #dashboard-top h1{
-    padding-top: 15px;
-    text-align: center;
+    flex-basis: 100%;
+    flex-grow: 1;
+    font-size: 25px;
 }
 
 #dashboard-top h4{
-    font-weight: 200px;
-    text-align: center;
+    flex-basis: 100%;
     opacity: 0.7;
+    margin-top: -16px;
 }
 
 #horizontal-line{
-    opacity: 0.5;
-    width: 90%;
-    border: 1px solid black;
-    height: 1px;
+    margin: auto;
+    opacity: 0.3;
+    width: 92%;
+    border: 0.5px solid black;
     background-color: black;
     border-radius: 3px;
+}
+
+#darkMode-button{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    margin-top: 0;
+}
+
+#darkMode-button h3{
+    align-self: center;
+    opacity: 0.5;
+}
+
+#darkMode-button #switch{
+    cursor: pointer;
+    align-self: center;
+    width: 40px;
+    height: 20px;
+    background-color: rgb(218, 213, 213);
+    border-radius: 20px;
+    z-index: 0;
+    padding: 3px;
+}
+
+#darkMode-button #switchCircle{
+    height: 93%;
+    width: 45%;
+    background-color: rgb(252, 252, 252);
+    border-radius: 30px;
+    margin-left: 52%;
+    z-index: 1;
+   /* transform: translateX(-100%);
+   animation-duration: 0.15s;
+   animation-fill-mode: both;
+   animation-timing-function: ease-in;*/
+}
+
+/*---------------CARDS-------------*/
+.top-cards{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card{
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    width: 85%;
+    height: 220px;
+    background-color: var(--topBGPattern);
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 0px 10px rgba(19, 19, 19, 0.1);
+}
+
+.card span{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card span img{
+    margin-top: 6%;
+    margin-right: 8px;
+}
+
+.card h1{
+    font-size: 50px;
+    margin-top: 8%;
+}
+
+.card h4{
+    font-size: 14px;
+    margin-top: -10%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.card-facebook{
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+.card-twitter{
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+.card-instagram{
+    /*background-image: linear-gradient(to right, #fdc468, #df4996);*/
+}
+.card-youtube{
+    border-top: 5px solid hsl(348, 97%, 39%);
 }
