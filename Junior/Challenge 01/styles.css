@@ -3,23 +3,237 @@
 /*Light Theme*/
 --White: hsl(0, 0%, 100%);
 --topBGPattern: hsl(225, 100%, 98%);
---cardBG: hsl(227, 47%, 96%);
+--cardBG: hsl(227, 49%, 92%);
 --DarkGrayish-BlueText: hsl(228, 12%, 44%);
 --VeryDarkBluetext: hsl(230, 17%, 14%);
 
 }
 
 html{
-    margin: auto;
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
 }
 
 body{
+    margin: 0px auto;
     background-color: var(--White);
 }
 
 /*---------------HEADER-------------*/
+
+#background{
+    width: 100%;
+    height: 270px;
+    background-color:var(--topBGPattern);
+    z-index: -10;
+    margin-bottom: -11em;
+}
+#dashboard-top{
+    margin: auto;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: "social darkMode" ;
+    transform: translateY(-80%);
+    align-items: center;
+}
+
+#dashboard-top h1{
+    grid-area: social;
+    margin-bottom: 10%;
+}
+
+#dashboard-top h4{
+    grid-area: social;
+    margin-top: 10%;
+    opacity: 0.5;
+}
+
+#horizontal-line{
+    display: none;
+    margin: auto;
+    opacity: 0.3;
+    width: 92%;
+    border: 0.5px solid black;
+    background-color: black;
+    border-radius: 3px;
+}
+
+#right-head{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#darkMode-button{
+    display: flex;
+    width: 32%;
+    height: 4em;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#darkMode-button h3{
+    padding-top: 3px;
+    align-self: flex-start;
+    opacity: 0.5;
+    flex-basis: 50%;
+    font-size: 16px;
+}
+
+#darkMode-button #switch{
+    cursor: pointer;
+    align-self: flex-start;
+    width: 40px;
+    height: 20px;
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+    border-radius: 20px;
+    z-index: 0;
+    padding: 3px;
+    transform: translateY(1em);
+}
+
+#darkMode-button #switchCircle{
+    height: 93%;
+    width: 45%;
+    background-color: rgb(252, 252, 252);
+    border-radius: 30px;
+    margin-left: 52%;
+    z-index: 1;
+   /* transform: translateX(-100%);
+   animation-duration: 0.15s;
+   animation-fill-mode: both;
+   animation-timing-function: ease-in;*/
+}
+
+/*---------------CARDS-------------*/
+.top-cards{
+    display: grid;
+    margin: auto;
+    width: 85%;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1fr;
+    margin-top: -4em;
+    grid-gap: 20px;
+}
+
+.card{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 220px;
+    background-color: var(--cardBG);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(19, 19, 19, 0.1);
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: rgb(228, 216, 216);
+}
+
+.card span{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.card span img{
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+.card span p{
+    margin-top: 5em;
+}
+
+.card h1{
+    font-size: 50px;
+    margin-top: 8%;
+}
+
+.card h4{
+    font-size: 14px;
+    margin-top: -10%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+.card-facebook{
+    border-top: 5px solid hsl(208, 92%, 53%);
+}
+.card-twitter{
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+.card-instagram{
+    /*background-image: linear-gradient(to right, #fdc468, #df4996);*/
+}
+.card-youtube{
+    border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+/*------------------SMALL CARDS------------------*/
+#overview{
+    height: 100vh;
+    margin: auto;
+    margin-top: 4%;
+    width: 85%;
+}
+.overview-cards{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:    
+    "f1 f2 f3 f4",
+    "s1 s2 s3 s4";
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+.mini-card{
+    width: 95%;
+    height: 110px;
+    background-color: var(--cardBG);
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(19, 19, 19, 0.1);
+    cursor: pointer;
+
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(4,25%);
+    grid-template-areas: "a1 a2 a3 a4" "a5 a6 a7 a8";
+}
+
+.mini-card:hover{
+    background-color: rgb(228, 216, 216);
+}
+
+.social-icon{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.social-icon img{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#mini-card-data{
+    
+}
+
+
+
+
+
+
+
+
+/*------------------MEDIAS------------------*/
+
+/*
 
 #background{
     width: 100%;
@@ -51,6 +265,7 @@ body{
 }
 
 #horizontal-line{
+    display: none;
     margin: auto;
     opacity: 0.3;
     width: 92%;
@@ -92,58 +307,7 @@ body{
    /* transform: translateX(-100%);
    animation-duration: 0.15s;
    animation-fill-mode: both;
-   animation-timing-function: ease-in;*/
+   animation-timing-function: ease-in;
 }
 
-/*---------------CARDS-------------*/
-.top-cards{
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.card{
-    margin: auto;
-    text-align: center;
-    padding: 10px;
-    width: 85%;
-    height: 220px;
-    background-color: var(--topBGPattern);
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0px 0px 10px rgba(19, 19, 19, 0.1);
-}
-
-.card span{
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.card span img{
-    margin-top: 6%;
-    margin-right: 8px;
-}
-
-.card h1{
-    font-size: 50px;
-    margin-top: 8%;
-}
-
-.card h4{
-    font-size: 14px;
-    margin-top: -10%;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: 200;
-}
-.card-facebook{
-    border-top: 5px solid hsl(208, 92%, 53%);
-}
-.card-twitter{
-    border-top: 5px solid hsl(203, 89%, 53%);
-}
-.card-instagram{
-    /*background-image: linear-gradient(to right, #fdc468, #df4996);*/
-}
-.card-youtube{
-    border-top: 5px solid hsl(348, 97%, 39%);
-}
+*/
