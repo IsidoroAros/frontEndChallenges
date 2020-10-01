@@ -1,12 +1,35 @@
 /*---------------GENERAL-------------*/
 :root{
 /*Light Theme*/
---White: hsl(0, 0%, 100%);
---topBGPattern: hsl(225, 100%, 98%);
---cardBG: hsl(227, 49%, 92%);
---DarkGrayish-BlueText: hsl(228, 12%, 44%);
---VeryDarkBluetext: hsl(230, 17%, 14%);
+--lime-green: hsl(163, 72%, 41%);
+--bright-red: hsl(356, 69%, 56%);
+--facebook: hsl(208, 92%, 53%);
+--twitter: hsl(203, 89%, 53%);
+--instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+--youtube:  hsl(348, 97%, 39%);
 
+/* Toggle */
+--toggle-bg-left: hsl(230, 22%, 74%);
+--toggle-bg-right: hsl(230, 22%, 74%);
+--toggle: white;
+
+--bg-color: hsl(0, 0%, 100%);
+--top-bg-color: hsl(225, 100%, 98%);
+--card-bg-color:  hsl(227, 47%, 96%);
+--text-color: hsl(228, 12%, 44%); 
+--headings-color: hsl(230, 17%, 14%);
+
+}
+
+[data-theme='dark']{
+    --toggle-bg-left: linear-gradient(to right,  hsl(210, 78%, 56%), hsl(180, 51%, 47%));
+    --toggle-bg-right: linear-gradient(to right,  hsl(180, 51%, 47%), hsl(146, 68%, 55%));
+    --toggle: hsl(230, 17%, 14%);
+    --bg-color:  hsl(230, 17%, 14%);
+    --top-bg-color:hsl(232, 19%, 15%);
+    --card-bg-color:   hsl(228, 28%, 20%);
+    --text-color: hsl(228, 34%, 66%); 
+    --headings-color: hsl(0, 0%, 100%);
 }
 
 html{
@@ -32,8 +55,8 @@ body{
     position: absolute;
     width: 100%;
     height: 270px;
-    background-color:var(--topBGPattern);
-    z-index: -10;
+    background-color:var(--top-bg-color);
+    z-index: -1;
 }
 #dashboard-top{
     margin: auto;
@@ -82,37 +105,54 @@ body{
     justify-content: flex-end;
 }
 
-#darkMode-button h3{
-    padding-top: 3px;
-    align-self: flex-start;
-    opacity: 0.5;
-    flex-basis: 70%;
-    font-size: 16px;
+.toggle-container{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    margin-left: auto;
 }
 
-#darkMode-button #switch{
+.toggle-label{
+    color: var(--text-color);
+}
+
+.toggle-area{
+    margin-left: 1em;
+    width: 4em;
+    height: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    align-self: flex-start;
-    width: 40px;
-    height: 20px;
-    background-image: linear-gradient(to right, hsl(210, 78%, 56%),hsl(146, 68%, 55%));
-    border-radius: 20px;
-    z-index: 0;
-    padding: 3px;
-    transform: translateY(1em);
 }
 
-#darkMode-button #switchCircle{
-    height: 93%;
-    width: 55%;
-    background-color: rgb(252, 252, 252);
-    border-radius: 100%;
-    margin-left: 43%;
+.toggle-left{
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 2rem;
+    background-color: var(--toggle-bg-left);
+    border-radius: 50% 0 0 50% ;
+}
+
+.toggle-right{
+    position: absolute;
+    z-index: -1;
+    width: 50%;
+    height: 2rem;
+    background-color: var(--toggle-bg-right);
+    border-radius: 0 50% 50% 0;
+    transform: translateX(2rem);
+}
+
+.toggle{
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    background: var(--toggle);
+    transform: translateX(2.2em);
+    transition: all 150ms linear;
     z-index: 1;
-   /* transform: translateX(-100%);
-   animation-duration: 0.15s;
-   animation-fill-mode: both;
-   animation-timing-function: ease-in;*/
 }
 
 /*---------------CARDS-------------*/
@@ -131,7 +171,7 @@ body{
     text-align: center;
     width: 100%;
     height: 220px;
-    background-color: var(--cardBG);
+    background-color: var(--card-bg-color);
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(19, 19, 19, 0.1);
 }
@@ -168,10 +208,10 @@ body{
     font-weight: 200;
 }
 .card-facebook{
-    border-top: 5px solid hsl(208, 92%, 53%);
+    border-top: 5px solid var(--facebook);
 }
 .card-twitter{
-    border-top: 5px solid hsl(203, 89%, 53%);
+    border-top: 5px solid var(--twitter);
 }
 .card-instagram{
     border-top: 4px solid transparent;
@@ -217,7 +257,7 @@ body{
     position: relative;
     width: 95%;
     height: 110px;
-    background-color: var(--cardBG);
+    background-color: var(--card-bg-color);
     justify-content: center;
     padding: 10px;
     border-radius: 8px;
@@ -235,7 +275,7 @@ body{
 .mini-card .mini-card-heading{
     align-self: center;
     font-weight: 700;
-    color: var(--DarkGrayish-BlueText);
+    color: var(--text-color);
     padding-left: 5%;
 }
 
