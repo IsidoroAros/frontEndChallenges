@@ -21,7 +21,7 @@
 
 }
 
-[data-theme='dark']{
+/*[data-theme='dark']{
     --toggle-bg-left: linear-gradient(to right,  hsl(210, 78%, 56%), hsl(180, 51%, 47%));
     --toggle-bg-right: linear-gradient(to right,  hsl(180, 51%, 47%), hsl(146, 68%, 55%));
     --toggle: hsl(230, 17%, 14%);
@@ -30,7 +30,7 @@
     --card-bg-color:   hsl(228, 28%, 20%);
     --text-color: hsl(228, 34%, 66%); 
     --headings-color: hsl(0, 0%, 100%);
-}
+}*/
 
 html{
     font-family: 'Inter', sans-serif;
@@ -93,15 +93,6 @@ body{
 
 #right-head{
     display: flex;
-    justify-content: flex-end;
-}
-
-#darkMode-button{
-    width: 100%;
-    display: flex;
-    width: 32%;
-    height: 4em;
-    align-items: center;
     justify-content: flex-end;
 }
 
