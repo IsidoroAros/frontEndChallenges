@@ -19,7 +19,7 @@
     box-shadow: 0px 0px 20px rgba(163, 129, 255, 0.2);
 }
 
-.calculator .calculator-screen{
+.calculator #calculator-screen{
     position: relative;
     width: 100%;
     height: 30%;
@@ -47,6 +47,7 @@
 }
 
 .calculator .key{
+    cursor: pointer;
     display: flex;
     margin: auto;
     background-color: var(--lightModeCalculator);
@@ -57,6 +58,11 @@
     width: 70%;
     border-radius: 60px;
     box-shadow: 1px 1px 6px #adc9fd73, -1px -1px 6px white;
+    transition: all 100ms;
+}
+
+.calculator .key:active{
+    background-color: rgba(0,0,0,0.1);
 }
  #one{
     grid-area: one;
